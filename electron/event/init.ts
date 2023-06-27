@@ -2,8 +2,17 @@ import { createWindow } from "../main"
 import { BrowserWindow, app } from "electron"
 
 export function initEvent(_win: BrowserWindow) {
-  // do something...
-
+  // listenEvent("setTitle", ({ title }, event) => {
+  //   const webContents = event.sender
+  //   const win = BrowserWindow.fromWebContents(webContents)
+  //   win?.setTitle(title)
+  // })
+  // handleEvent("dialog:openFile", async () => {
+  //   const { canceled, filePaths } = await dialog.showOpenDialog(win)
+  //   if (!canceled) {
+  //     return filePaths[0]
+  //   }
+  // })
 }
 
 app.whenReady().then(() => {
